@@ -1,8 +1,6 @@
 import { Body, Controller, Get, Post, UseGuards, UsePipes } from '@nestjs/common';
 import { AppService } from './app.service';
-import { StringToLowerCasePipe } from './common/pipes/string-to-lowercase.pipe';
-import { AuthGuard } from './common/guards/auth.guard';
-import { UserAgent } from './common/decorators/user-agent.decorator';
+
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('App')
